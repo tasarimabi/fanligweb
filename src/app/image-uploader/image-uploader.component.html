@@ -1,0 +1,7 @@
+<div>
+  <input id="imageinput" type="file" (change)="fileChange(input)" accept="image/*" #input />
+</div>
+
+<div *ngFor="let file_src of file_srcs;">
+  <img class="img-uploaded" [attr.src]='file_src' alt=""/>
+</div>

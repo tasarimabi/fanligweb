@@ -1,0 +1,662 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px)
+{
+    .navbar
+    {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse
+    {
+      padding: 0 0 20px 0;
+      background-color: rgba(33, 33, 33, 0.95) !important;
+      color: #fff;
+    }
+
+}
+
+@media(min-width:1215px)
+{
+    .f-social
+    {
+      float:right;
+      margin-top: 24px;
+      margin-right: 100px;
+    }
+}
+
+/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
+of those sections to manage the look and feel of the site. */
+.container > .navbar-header
+{
+  margin-right: -15px;
+  margin-left: -15px;
+  margin: 0;
+  padding: 0;
+}
+.intro-section {
+    height: 640px;
+    padding-top: 150px;
+    width:100%;
+    color: #ffffff;
+    //background-image: url('../../assets/section-1-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.features-section {
+    padding-bottom: 40px;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
+.footer-section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.f-intro
+{
+  margin-top: 20px;
+}
+.f-intro a:link img:hover
+{
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,0.90);
+  -ms-transform: scale(2,3); /* IE 9 */
+  -webkit-transform: scale(2,3); /* Safari */
+  transform: scale(1.05,1.05); /* Standard syntax */
+}
+.f-footer-store a:link img:hover
+{
+  -ms-transform: scale(2,3); /* IE 9 */
+  -webkit-transform: scale(2,3); /* Safari */
+  transform: scale(1.05,1.05); /* Standard syntax */
+}
+.f-header
+{
+  background-color: transparent;
+  border:none;
+}
+.f-logo
+{
+  margin-top: 2px;
+}
+.f-social
+{
+  float:right;
+  margin-top: 24px;
+}
+.f-social-title h5
+{
+  color: rgba(225, 225, 225, 0.7);
+}
+.f-social-button
+{
+  border-radius: 16px;
+  width:140px;
+  margin-left: 16px;
+  text-align: center;
+}
+.f-social-button:hover.f-facebook
+{
+  background-color: #3B64BA;
+}
+.f-social-button:hover.f-twitter
+{
+  background-color: #00B9FF;
+}
+.f-social-button a
+{
+  padding:6px 18px 6px 18px !important;
+  color:#fff !important;
+}
+.f-facebook
+{
+  background-color: #3B5998;
+}
+.f-twitter
+{
+  background-color: #1DA1F2;
+}
+.f-social-icon
+{
+  margin-right: 12px !important;
+}
+.f-social-button a>i
+{
+  margin-right: 6px;
+}
+.f-title
+{
+  font-size: 28px;
+  font-weight: 400;
+}
+.f-subtext
+{
+  width:80%;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.f-motto
+{
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.f-ios-store
+{
+  margin-left: 12px;
+}
+.f-feature-title
+{
+  color: #399A65;
+  font-size: 36px;
+  font-weight: 300;
+}
+.f-mocks
+{
+  text-align: right;
+}
+.f-cards
+{
+  margin-top: 36px;
+}
+.f-card
+{
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.15);
+  border-radius: 12px;
+  height: 240px;
+  padding:60px 20px 40px 20px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.f-marginTop-md
+{
+  margin-top: 20px;
+}
+.f-subscribe
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.feature-text
+{
+  margin-top: 32px;
+  font-weight: 300;
+  font-size: 16px;
+  width:100%;
+  color:#4A4A4A;
+  text-align: center;
+}
+.f-email
+{
+}
+.f-textfield
+{
+}
+.f-left
+{
+  float: left;
+  text-align: right;
+}
+.f-right
+{
+  float: right;
+}
+input
+{
+  height:50px !important;
+  margin-top: -8px;
+  border: 1px solid #4A4A4A !important;
+}
+input:focus 		{ outline:none !important; }
+
+/* LABEL ======================================= */
+label
+{
+  color:#999;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:15px;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label
+{
+  top:-20px;
+  font-size:14px;
+  color:#399A65;
+}
+.f-button-send
+{
+  background: transparent;
+  border:none;
+  font-size: 16px;
+}
+.button {
+  position: relative;
+  margin: 1em;
+  font-weight: 100;
+  padding: 1em 1.05em;
+  text-align: center;
+  width: 200px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  margin-top: -8px;
+}
+.button.raised {
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  background: #399A65;
+  color:#fff;
+  border:1px solid #4A4A4A;
+
+}
+.button.raised:active {
+  background: #399A65;
+  color:#fff;
+}
+.button.raised:hover {
+  background: #2B8956;
+  color:#fff;
+}
+
+span {
+  font-weight: 400;
+}
+
+input[type="checkbox"].toggle {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+input[type="checkbox"].toggle:focus {
+  outline: 0;
+}
+input:hover
+{
+  border: 1px solid #399A65 !important;
+}
+
+
+
+
+
+.f-footer-store
+{
+  margin-top: 40px;
+  background-color: none;
+}
+.f-footer-logo
+{
+  margin-top: 40px;
+}
+.f-contact-link
+{
+  margin-bottom: 20px;
+  font-size: 18px;
+  color:#4A4A4A;
+}
+.f-contact-link a
+{
+  font-size: 18px;
+  color:#399A65;
+  text-decoration: underline;
+}
+.f-footer-motto
+{
+  margin-top: 6px;
+  font-weight: 300;
+}
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+  body
+  {
+    background: #eee;
+  }
+  .f-logo
+  {
+    margin-top: 12px;
+  }
+  .top-nav-collapse
+  {
+    padding: 0;
+    background-color: rgba(33, 33, 33, 0.95) !important;
+    color: #fff;
+  }
+  .top-nav-collapse .f-social-title
+  {
+    color: #fff;
+    display: none;
+  }
+  .top-nav-collapse .f-social-button
+  {
+    width:48px;
+    text-align: left;
+  }
+  .top-nav-collapse .f-social
+  {
+    float:right;
+    margin-top:-55px;
+    margin-right: 20px;
+  }
+  .top-nav-collapse a > img
+  {
+    width:80px;
+  }
+  .top-nav-collapse a > span
+  {
+    display:none;
+  }
+  .top-nav-collapse .f-logo
+  {
+    float:left;
+  }
+  .top-nav-collapse .f-logo img
+  {
+    margin-top:-10px;
+  }
+  .container
+  {
+    text-align: center;
+  }
+  .f-logo
+  {
+    float: none;
+  }
+  .f-logo img
+  {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .f-social
+  {
+    float: none;
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: auto;
+  }
+  .f-social-button
+  {
+    float:left;
+  }
+  .f-social-title
+  {
+    padding-left:16px;
+  }
+  .navbar-header
+  {
+    text-align: center;
+  }
+  .f-intro
+  {
+    margin-top: 60px;
+    height:100%;
+  }
+  .f-subtext
+  {
+    width:100%;
+  }
+  .f-motto
+  {
+    margin-top: 40px;
+  }
+  .f-mocks
+  {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .f-mocks img
+  {
+    max-width: 100%;
+  }
+  .intro-section
+
+  .features-section
+  {
+    padding-bottom: 20px;
+  }
+  .f-card
+  {
+    margin: 20px;
+  }
+  .f-subscribe
+  {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .f-textfield
+  {
+    margin-top: 30px;
+  }
+  .f-textfield input
+  {
+    float: none;
+    width:100%;
+  }
+  .f-button
+  {
+    float: none;
+    text-align: center !important;
+    border-bottom-left-radius: 12px;
+    width:100%;
+  }
+  .f-input
+  {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+  }
+  .form-control
+  {
+    height:50px !important;
+  }
+  .f-feature-title
+  {
+    margin-bottom: -30px;
+    font-size: 24px;
+    margin-top: 220px;
+  }
+  .f-intro img
+  {
+    width:40%;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 421px) {
+
+  .top-nav-collapse
+  {
+    padding: 0 0 20px 0;
+    background-color: rgba(33, 33, 33, 0.95) !important;
+    color: #fff;
+  }
+  .top-nav-collapse.f-social-title
+  {
+    color: #fff;
+  }
+  .container
+  {
+    text-align: center;
+  }
+  .f-logo
+  {
+    float: none;
+  }
+  .f-logo img
+  {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .f-social
+  {
+    float: none;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: auto;
+  }
+  .f-social-button
+  {
+    float:left;
+  }
+  .f-social-title
+  {
+    padding-left:16px;
+  }
+  .navbar-header
+  {
+    text-align: center;
+  }
+  .f-intro
+  {
+    margin-top: 60px;
+    height:100%;
+  }
+  .f-subtext
+  {
+    width:100%;
+  }
+  .f-motto
+  {
+    margin-top: 40px;
+  }
+  .f-mocks
+  {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .f-mocks img
+  {
+    max-width: 100%;
+  }
+  .intro-section
+
+  .features-section
+  {
+    padding-bottom: 20px;
+  }
+  .f-card
+  {
+    margin: 20px;
+  }
+  .f-subscribe
+  {
+    margin-bottom: 20px;
+    text-align: center !important;
+  }
+  .f-textfield
+  {
+    margin-top: 30px;
+  }
+  .f-textfield input
+  {
+    float: none;
+    width:100%;
+  }
+  .f-button
+  {
+    float: none;
+    text-align: center !important;
+    border-bottom-left-radius: 12px;
+    width:100%;
+  }
+  .f-input
+  {
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .f-feature-title
+  {
+    margin-bottom: -30px;
+    font-size: 24px;
+    margin-top: 360px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+  .f-subscribe
+  {
+    margin-bottom: 60px;
+  }
+  .f-feature-title
+  {
+    margin-top: 480px;
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+  .f-mocks
+  {
+    margin-top: 140px;
+    text-align: center;
+  }
+  .f-feature-title
+  {
+    margin-top:480px;
+  }
+  .features-section
+  {
+  }
+}
